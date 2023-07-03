@@ -11,6 +11,7 @@ Some of datasets are in ./dataset folder. Due to the large file size limitation,
 
 ## Train
 For datasets except HSE, p53, MMP, PPAR-gamma and hERG, run the following code. For datasets with node attributes, feature chooses default, otherwise deg-num.
+    
     python train.py --DS dataset
 
 
