@@ -166,8 +166,8 @@ if __name__ == '__main__':
     result_auc = []
     for i in range(5):
         setup_seed(i)
-        aemodel = GNNet(dataset_sampler_train.feat_dim, args.hidden_dim, args.output_dim, args.num_gc_layers, args.mem_num_node, args.mem_num_graph, max_nodes_num, args=args).cuda()
-        results = train(data_train_loader, data_test_loader, aemodel, i, args)
+        model = GNNet(dataset_sampler_train.feat_dim, args.hidden_dim, args.output_dim, args.num_gc_layers, args.mem_num_node, args.mem_num_graph, max_nodes_num, args=args).cuda()
+        results = train(data_train_loader, data_test_loader, model, i, args)
         result_auc.append(results)
             
     result_auc = np.array(result_auc)    
