@@ -29,7 +29,7 @@ For hERG, run the following code.
 @inproceedings{niuhimnet,
   title={Graph-level Anomaly Detection via Hierarchical Memory Networks},
   author={Niu, Chaoxi and Pang, Guansong and Chen, Ling},
-  booktitle=" European Conference Machine Learning and Knowledge Discovery in Databases",
+  booktitle=" European Conference on Machine Learning and Knowledge Discovery in Databases",
   year={2023}
 }
 ```
