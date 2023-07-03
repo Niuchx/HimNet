@@ -10,7 +10,8 @@ Graph-level anomaly detection aims to identify abnormal graphs that exhibit devi
 Some of datasets are in ./dataset folder. Due to the large file size limitation, some datasets are not uploaded in this project. You may download them from the urls listed in the paper.
 
 ## Train
-
+For datasets except HSE, p53, MMP, PPAR-gamma and hERG, run the following code. For datasets with node attributes, feature chooses default, otherwise deg-num.
+    python train.py --DS dataset
 
 
 ## Citation
@@ -18,7 +19,7 @@ Some of datasets are in ./dataset folder. Due to the large file size limitation,
 @inproceedings{niuhimnet,
   title={Graph-level Anomaly Detection via Hierarchical Memory Networks},
   author={Niu, Chaoxi and Pang, Guansong and Chen, Ling},
-  booktitle=" European Conference on Machine Learning and Knowledge Discovery in Databases",
+  booktitle="European Conference on Machine Learning and Knowledge Discovery in Databases",
   year={2023}
 }
 ```
