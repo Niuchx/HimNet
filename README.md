@@ -10,9 +10,17 @@ Graph-level anomaly detection aims to identify abnormal graphs that exhibit devi
 Some of datasets are in ./dataset folder. Due to the large file size limitation, some datasets are not uploaded in this project. You may download them from the urls listed in the paper.
 
 ## Train
-For datasets except HSE, p53, MMP, PPAR-gamma and hERG, run the following code. For datasets with node attributes, feature chooses default, otherwise deg-num.
+For datasets except HSE, p53, MMP, PPAR-gamma and hERG, run the following code:
     
-    python train.py --DS dataset
+    python train.py --DS dataset --feature default/deg-num
+
+For HSE, p53, MMP and PPAR-gamma, run the following code:
+
+    python train_tox.py --DS dataset
+
+For hERG, run the following code:
+
+    python train_herg.py
 
 
 ## Citation
