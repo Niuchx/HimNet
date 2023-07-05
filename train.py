@@ -4,7 +4,6 @@ from sklearn.metrics import auc, precision_recall_curve, roc_curve
 import argparse
 import load_data
 import torch
-import time
 from GCN_embedding import *
 from torch.autograd import Variable
 from graph_sampler import GraphSampler
@@ -151,7 +150,7 @@ if __name__ == '__main__':
         dataset_sampler_test = GraphSampler(graphs_test, features=args.feature, normalize=False, max_num_nodes=max_nodes_num)
         data_test_loader = torch.utils.data.DataLoader(dataset_sampler_test, shuffle=False, batch_size=1)
         
-        results = train(data_train_loader, data_test_loader, model, k, args)
+        results = train(data_train_loader, data_test_loader, model, args)
         
         result_auc.append(results)
             
