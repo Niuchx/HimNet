@@ -79,7 +79,7 @@ def train(dataset, data_test_loader, model, k, args):
             loss_epoch += loss.item() * adj.shape[0]
             num_train += adj.shape[0]
             loss.backward()
-            optimizer_pre.step()
+            optimizer.step()
             
         print("Epoch: %d Train AE Loss: %f" % (epoch+1, loss_epoch / num_train))
         
