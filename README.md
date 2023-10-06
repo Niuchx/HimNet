@@ -25,10 +25,12 @@ For hERG, run the following code:
 
 ## Citation
 ```bibtex
-@inproceedings{niuhimnet,
-  title={Graph-level Anomaly Detection via Hierarchical Memory Networks},
+@inproceedings{niu2023graph,
+  title={Graph-Level Anomaly Detection via Hierarchical Memory Networks},
   author={Niu, Chaoxi and Pang, Guansong and Chen, Ling},
-  booktitle="European Conference on Machine Learning and Knowledge Discovery in Databases",
-  year={2023}
+  booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},
+  pages={201--218},
+  year={2023},
+  organization={Springer}
 }
 ```
